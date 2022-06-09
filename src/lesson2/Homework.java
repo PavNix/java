@@ -1,13 +1,13 @@
-package sample;
+package lesson2;
 
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) throws Exception {
+public class Homework {
+    public static void main(String[] args){
 
-        Main.task1();
-        Main.task2();
-        Main.task3();
+        Homework.task1();
+        Homework.task2();
+        Homework.task3();
 
     }
 
@@ -28,8 +28,8 @@ public class Main {
         int applePrice = 2;
         int amountApple = 6;
 
-        int sumCoast = applePrice * amountApple;
-        System.out.println(sumCoast + " $");
+        int sumCost = applePrice * amountApple;
+        System.out.println(sumCost + " $");
     }
 
     public static void task3(){
@@ -38,19 +38,19 @@ public class Main {
         Scanner scQustion = new Scanner(System.in);
 
         System.out.println("Стоимость топлива за один литр: ");
-        double coast = scQustion.nextDouble(); //1,2$
+        double cost = scQustion.nextDouble(); //1,2$
 
         double distance = 100;
         
         System.out.println("Сколько литров топлива на сто киллометров используется:  ");
-        double coastDist = scQustion.nextDouble(); //8 литров
+        double costDist = scQustion.nextDouble(); //8 литров
         
         System.out.println("Дистанция поездки: ");
         double sumDistance = scQustion.nextDouble(); //120 км
         
-        double sumPrice = (coastDist / distance * sumDistance) * coast;;
+        double sumPrice = (costDist / distance * sumDistance) * cost;;
 
-        scQustion.close();
+        // scQustion.close();
         
         System.out.println(sumPrice + " $");
     }

@@ -132,14 +132,11 @@ public class Homework3 {
         System.out.println("Введите сторону c: ");
         int c = scQustion.nextInt();
 
-        int min = Math.min(Math.min(a, b), c);
-
-        if (min <= 0) {
+        if ((a < (b + c)) && (b < (c + a)) && (c < (a + b))) {
+            System.out.println("Такой треугольник существует.");
+        } else {
             System.out.println("Такой треугольник не существует.");
-            return;
         }
-
-        System.out.println("Такой треугольник существует.");
     }
 
     public static void task4(int num) {

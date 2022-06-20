@@ -18,12 +18,12 @@ public class Homework4 {
         Scanner scQustion = new Scanner(System.in);
 
         System.out.println("Введите число: ");
-        int n = scQustion.nextInt();
+        long n = scQustion.nextInt();
 
-        int result = 1;
+        long result = 1;
 
         if (n > 4 && n < 16) {
-            for (int i = n; i != 0; i--) {
+            for (long i = n; i != 0; i--) {
                 result *= i;
             }
 

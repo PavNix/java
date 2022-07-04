@@ -2,8 +2,6 @@ package lesson4;
 
 import java.util.Scanner;
 
-import javax.lang.model.element.Element;
-
 public class Homework4 {
     public static void main(String[] args) {
         Homework4.task1();
